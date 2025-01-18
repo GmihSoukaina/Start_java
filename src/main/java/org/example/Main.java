@@ -8,10 +8,11 @@ public class Main {
         VariablesExample.run();
         PointExample.run();
         strings.run();
+        arrays.run();
         EscapeSequencesExample.run();
         ArithmeticExpressions.run();
         MultiDimensionalArrayExample.run();
-        arrays.run();
+
     }
     public class VariablesExample {
         public static void run() {
