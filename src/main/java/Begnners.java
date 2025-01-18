@@ -1,4 +1,7 @@
 import java.awt.*;
+import java.text.FieldPosition;
+import java.text.NumberFormat;
+import java.text.ParsePosition;
 import java.util.Arrays;
 
 public class Begnners {
@@ -10,8 +13,9 @@ public class Begnners {
 //        EscapeSequencesExample.run();
 //        ArithmeticExpressions.run();
 //        MultiDimensionalArrayExample.run();
-        casting.run();
-        MathClass.run();
+//        casting.run();
+//        MathClass.run();
+        FormattingNumbers.run();
     }
     public class VariablesExample {
         public static void run() {
@@ -182,6 +186,25 @@ public class Begnners {
 
             // Random Number
             System.out.println("Random number between 0 and 1: " + Math.random());
+        }
+    }
+
+    public class FormattingNumbers {
+        public static void run() {
+            // in the java we have concept of abstract classes
+            //NumberFormat currency = new NumberFormat()
+
+            NumberFormat currency = NumberFormat.getCurrencyInstance();
+            String result =  currency.format(1234567896.235);
+            System.out.println(result);
+
+            NumberFormat percent = NumberFormat.getPercentInstance();
+            String result1 =  percent.format(1234567896.235);
+            System.out.println(result1);
+
+            //NumberFormat.getPercentInstance().format(0.1); // this call method chaining
+            String result2 = NumberFormat.getPercentInstance().format(0.1);
+            System.out.println(result2);
         }
     }
 }
