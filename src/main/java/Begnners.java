@@ -3,14 +3,15 @@ import java.util.Arrays;
 
 public class Begnners {
     public static void main(String[] args) {
-        VariablesExample.run();
-        PointExample.run();
-        strings.run();
-        arrays.run();
-        EscapeSequencesExample.run();
-        ArithmeticExpressions.run();
-        MultiDimensionalArrayExample.run();
-
+//        VariablesExample.run();
+//        PointExample.run();
+//        strings.run();
+//        arrays.run();
+//        EscapeSequencesExample.run();
+//        ArithmeticExpressions.run();
+//        MultiDimensionalArrayExample.run();
+        casting.run();
+        MathClass.run();
     }
     public class VariablesExample {
         public static void run() {
@@ -144,6 +145,43 @@ public class Begnners {
             String  n = "1";
             Integer.parseInt(n); //int
             Short.parseShort(n); //short
+        }
+    }
+
+    public class MathClass {
+        public static void run() {
+            System.out.println("Math operations in Java:");
+
+            // Basic Math operations
+            int a = 10, b = 3;
+            System.out.println("Addition: " + Math.addExact(a, b));
+            System.out.println("Subtraction: " + Math.subtractExact(a, b));
+            System.out.println("Multiplication: " + Math.multiplyExact(a, b));
+            System.out.println("Division: " + ((double) a / b));
+
+            // Power and Square Root
+            System.out.println("Power (2^3): " + Math.pow(2, 3));
+            System.out.println("Square Root of 25: " + Math.sqrt(25));
+
+            // Min and Max
+            System.out.println("Max of (10, 20): " + Math.max(10, 20));
+            System.out.println("Min of (10, 20): " + Math.min(10, 20));
+
+            // Absolute Value
+            System.out.println("Absolute of -5: " + Math.abs(-5));
+
+            // Trigonometric Functions
+            System.out.println("Sin(30 degrees): " + Math.sin(Math.toRadians(30)));
+            System.out.println("Cos(60 degrees): " + Math.cos(Math.toRadians(60)));
+
+            // Rounding functions
+            double num = 7.6;
+            System.out.println("Ceil of 7.6: " + Math.ceil(num));
+            System.out.println("Floor of 7.6: " + Math.floor(num));
+            System.out.println("Round of 7.6: " + Math.round(num));
+
+            // Random Number
+            System.out.println("Random number between 0 and 1: " + Math.random());
         }
     }
 }
