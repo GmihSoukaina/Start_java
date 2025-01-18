@@ -3,6 +3,7 @@ import java.text.FieldPosition;
 import java.text.NumberFormat;
 import java.text.ParsePosition;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Begnners {
     public static void main(String[] args) {
@@ -15,7 +16,8 @@ public class Begnners {
 //        MultiDimensionalArrayExample.run();
 //        casting.run();
 //        MathClass.run();
-        FormattingNumbers.run();
+//        FormattingNumbers.run();
+        ReadingInput.run();
     }
     public class VariablesExample {
         public static void run() {
@@ -205,6 +207,27 @@ public class Begnners {
             //NumberFormat.getPercentInstance().format(0.1); // this call method chaining
             String result2 = NumberFormat.getPercentInstance().format(0.1);
             System.out.println(result2);
+        }
+    }
+
+    public class ReadingInput {
+        public static void run() {
+            Scanner scanner = new Scanner(System.in); // we need to specify where gonna red data from terminal or file
+            System.out.println("age : ");
+            byte age = scanner.nextByte(); //all these methods start with next
+            System.out.println("Your age " + age);
+
+            System.out.println("name : ");
+            String name = scanner.next();
+            System.out.println("Your name " + name);
+
+            // if  write two names is taken first one just
+            String name1 = scanner.nextLine();
+            System.out.println("first and last name " + name1); // return line the user entre
+
+            // we can also acces to the members of this string object
+            String name2 = scanner.nextLine().trim();
+            System.out.println("first and last name " + name1);
         }
     }
 }
