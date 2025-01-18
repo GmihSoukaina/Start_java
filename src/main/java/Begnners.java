@@ -1,9 +1,7 @@
-package org.example;
-
 import java.awt.*;
 import java.util.Arrays;
 
-public class Main {
+public class Begnners {
     public static void main(String[] args) {
         VariablesExample.run();
         PointExample.run();
