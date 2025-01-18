@@ -125,4 +125,25 @@ public class Begnners {
             System.out.println(Arrays.toString(num));
         }
     }
+
+    public class casting {
+        public static void run() {
+            //implicit casting
+            // byte can be automaticly convert to short  and short to int , int to long
+            short x = 1;
+            int y = x + 2;
+            System.out.println(y); // give 3
+
+            //we must explicity this result
+            double z = 1.1;
+            int m = (int)z + 2;
+            System.out.println(m);
+
+            //we cannot cast a string to a number
+            //we have wrapper classes so
+            String  n = "1";
+            Integer.parseInt(n); //int
+            Short.parseShort(n); //short
+        }
+    }
 }
