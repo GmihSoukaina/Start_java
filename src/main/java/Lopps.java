@@ -54,5 +54,13 @@ public class Lopps {
             }
             System.out.println(i);
         }
+
+
+        int[] numbers = {1, 2, 3, 4, 5};
+
+        System.out.println("Using for-each loop:");
+        for (int num : numbers) {  // Iterates over the array
+            System.out.println(num);
+        }
     }
 }
