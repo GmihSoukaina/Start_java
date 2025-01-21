@@ -1,3 +1,5 @@
+package Fundamentals;
+
 public class Lopps {
     public static void main(String[] args) {
         // Using a FOR loop

@@ -1,3 +1,5 @@
+package Fundamentals;
+
 import java.awt.*;
 import java.text.FieldPosition;
 import java.text.NumberFormat;
