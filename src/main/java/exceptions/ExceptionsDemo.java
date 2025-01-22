@@ -23,6 +23,7 @@ public class ExceptionsDemo {
     }
     // ✅ Checked Exception (Must be handled at compile-time)
     public void checkedExceptionExample() {
+        //  try-catch using in catching exceptions //
         try {
             File file = new File("test.txt");
             FileReader fr = new FileReader(file); // File might not exist
@@ -36,9 +37,12 @@ public class ExceptionsDemo {
     // ✅ Unchecked Exception (Runtime exception)
     public void uncheckedExceptionExample() {
         try {
+            System.out.println("Inside try block.");
             int num = 10 / 0; // Division by zero
         } catch (ArithmeticException e) {
             System.out.println("Unchecked Exception: Cannot divide by zero - " + e.getMessage());
+        }finally {
+        System.out.println("This will always execute.");
         }
     }
 
