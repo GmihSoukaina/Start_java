@@ -41,6 +41,9 @@ public class ExceptionsDemo {
             int num = 10 / 0; // Division by zero
         } catch (ArithmeticException e) {
             System.out.println("Unchecked Exception: Cannot divide by zero - " + e.getMessage());
+        //}
+        //catch (Exception1 | Exception2 e) {
+            //System.out.println("Unchecked Exception: Cannot divide by zero - " + e.getMessage());
         }finally {
         System.out.println("This will always execute.");
         }
